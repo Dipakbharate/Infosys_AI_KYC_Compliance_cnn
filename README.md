@@ -1,17 +1,45 @@
-AI-Powered Identity Verification & Fraud Detection for KYC Compliance
+# KYC & AML Backend
 
-An end-to-end AI system for AADHAR document verification, address validation, and fraud detection for BFSI KYC/AML workflows using Computer Vision, NLP, Graph Analysis, and Azure Cloud.
+This is the backend for the AI-Powered KYC & AML Compliance project.
 
-📌 Problem Statement
+## Technologies
+- Node.js
+- Express
+- MongoDB (Mongoose)
+- JWT (Authentication)
+- Multer (File Uploads)
 
-Manual KYC verification is slow, error-prone, and expensive. Fraudsters frequently reuse addresses, manipulate identity documents, or submit inconsistent data across documents.
+## Setup
 
-This project automates:
+1. **Install Dependencies**
+   ```bash
+   cd backend
+   npm install
+   ```
 
-Identity verification from AADHAR and KYC documents
+2. **Environment Variables**
+   The `.env` file should contain:
+   ```env
+   PORT=5000
+   MONGODB_URI=mongodb://localhost:27017/kyc_db
+   JWT_SECRET=your_super_secret_key_123
+   NODE_ENV=development
+   ```
 
-Address extraction and normalization
+3. **Run the Server**
+   ```bash
+   npm run dev
+   ```
 
-Detection of fraudulent address patterns
+## API Endpoints
 
-Real-time KYC decision support aligned with AML/KYC compliance
+### Authentication
+- `POST /api/auth/register` - Create a new account
+- `POST /api/auth/login` - Login and get token
+
+### KYC Verification
+- `POST /api/kyc/verify` - Upload documents for AI verification (Requires Auth)
+- `GET /api/kyc/history` - Get history of verifications (Requires Auth)
+
+## ML Integration
+Currently, the verification logic in `controllers/kyc.js` is mocked to simulate ML processing. To integrate the real ML service, replace the mock logic with calls to your Python ML service (e.g., using `axios` to call a Gradio endpoint or a Flask/FastAPI service).
