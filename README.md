@@ -555,14 +555,17 @@ This keeps the system functional for real-world image quality variation without 
 
 ---
 
-## Team
+## 👥 Contributors
 
-| Role | Name |
-|------|------|
-| Cloud Deployment Lead / AI Intern | Sriram Sannidhi |
-| ML Development (GNN + Classification) | Team Members |
-| Backend Development | Team Members |
-| Frontend Development | Team Members |
+| Contributor | Role | Focus Area |
+|-------------|------|------------|
+| [Gireesh Kumar Gowd](https://github.com/Gireesh-Kumar-Gowd) | AI & ML Lead | GNN models, document classification, fraud detection pipeline |
+| [Sriram Sannidhi](https://github.com/SannidhiSriram-06) | Cloud & Deployment Lead | AWS EC2/S3 deployment, backend integration, ML service orchestration |
+| [Ganesh Jalkote](https://github.com/ganeshjalkote932) | AI & ML | Model training, dataset processing |
+| [Navya Kedhari](https://github.com/Navyakedhari) | Web Development | Frontend React UI, component design |
+| [Ankush](https://github.com/ankushsans) | Web Development | Backend Node.js, API routes |
+| [Sai Pragna](https://github.com/SaiPragnaK) | Web Development | Frontend development, UI/UX |
+| [Akhila](https://github.com/akhila607) | Web Development | Frontend development |
 
 **Organisation:** Infosys Springboard — BFSI Sector Cloud Architecture Cohort
 
